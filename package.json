@@ -1,0 +1,25 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss-import": "^14.0.0",
+    "postcss": "^8.2.2",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "alpinejs": "^2.8.0",
+    "gulp": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "postcss-cli": "^8.3.1"
+  },
+  "scripts": {
+    "build:css": "postcss build src/style.css -o public/dist/tailwind.css",
+    "build-pro:css": "NODE_ENV=production postcss build src/style.css -o public/dist/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
